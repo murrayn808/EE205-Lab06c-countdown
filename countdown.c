@@ -1,7 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
-// University of Hawaii, College of Engineering
-// EE 205 - Object Oriented Programming
-// Lab 04a - Countdown
+//          University of Hawaii, College of Engineering
+/// @brief  Lab 06c - countdown - EE 205 - Spr 2022
 //
 // Usage:  countdown
 //
@@ -14,9 +13,6 @@
 // @author TODO_name <TODO_eMail>
 // @date   TODO_dd_mmm_yyyy
 ///////////////////////////////////////////////////////////////////////////////
-
-#include <stdio.h>
-#include <stdlib.h>
 
 int main() {
 

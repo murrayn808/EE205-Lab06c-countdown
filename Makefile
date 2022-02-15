@@ -1,20 +1,41 @@
 ###############################################################################
-# University of Hawaii, College of Engineering
-# EE 205  - Object Oriented Programming
-# Lab 04a - Countdown
+#         University of Hawaii, College of Engineering
+# @brief  Lab 04c - Countdown - EE 205 - Spr 2022
 #
 # @file    Makefile
 # @version 1.0
 #
 # @author @todo yourName <@todo yourMail@hawaii.edu>
-# @brief  Lab 04a - Countdown - EE 205 - Spr 2021
 # @date   @todo dd_mmm_yyyy
+#
+# @see     https://www.gnu.org/software/make/manual/make.html
 ###############################################################################
 
-all: countdown
+TARGET = countdown
 
-countdown: countdown.c
-	gcc -o countdown countdown.c
+
+all:  $(TARGET)
+
+
+CC     = gcc
+CFLAGS = -Wall -Wextra $(DEBUG_FLAGS)
+
+
+debug: DEBUG_FLAGS = -g -DDEBUG
+debug: clean $(TARGET)
+
+
+countdown.o: countdown.c
+	$(CC) $(CFLAGS) -c countdown.c
+
+
+countdown: countdown.o
+	$(CC) $(CFLAGS) -o $(TARGET) countdown.o
+
+
+test: $(TARGET)
+	./$(TARGET)
+
 
 clean:
-	rm -f *.o countdown
+	rm -f $(TARGET) *.o

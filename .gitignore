@@ -1,7 +1,29 @@
-# Object files
+###############################################################################
+###         University of Hawaii, College of Engineering
+### @brief  Lab 04c - Countdown - EE 205 - Spr 2022
+###
+### @file .gitignore
+### @version 1.0
+###
+### Tells git which files to ignore
+###
+### @author @todo yourName <@todo yourMail@hawaii.edu>
+### @date   @todo dd_mmm_yyyy
+###############################################################################
+
+# Ignore all .c files (this is a .cpp lab)
+*.c
+
+# Ignore all object files
 *.o
 
-# Executables
+# Ignore the executable file
 countdown
+a.out
 *.exe
-*.out
+
+# Ignore a hidden file for MacOS filesystems
+.DS_Store
+
+# Ignore vi swap files
+.*.swp
