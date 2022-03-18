@@ -10,8 +10,8 @@
 // Example:
 //   @todo
 //
-// @author TODO_name <TODO_eMail>
-// @date   TODO_dd_mmm_yyyy
+// @Nathaniel Murray <murrayn@hawaii.edu>
+// @3/18/2022
 ///////////////////////////////////////////////////////////////////////////////
 
 int main() {

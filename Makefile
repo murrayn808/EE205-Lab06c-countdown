@@ -5,8 +5,8 @@
 # @file    Makefile
 # @version 1.0
 #
-# @author @todo yourName <@todo yourMail@hawaii.edu>
-# @date   @todo dd_mmm_yyyy
+# @author @Nathaniel Murray <@murrayn@hawaii.edu>
+# @date   @3/18/2022
 #
 # @see     https://www.gnu.org/software/make/manual/make.html
 ###############################################################################
